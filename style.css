@@ -1,0 +1,227 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   background-color: hsl(229, 57%, 11%);
+   font-family: 'Raleway', sans-serif;
+   font-size: 14px;
+   background-image: url(images/bg-desktop.png);
+   background-repeat: no-repeat;
+   background-position: bottom;
+   
+}
+
+p{
+    color: hsl(229, 7%, 55%);
+    
+    
+}
+
+p strong{
+    color: hsl(243, 100%, 93%);
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 56%, 26%);
+    gap: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 7%;
+    margin-right: 2%;
+    border-radius: 5% 50% 5% 5%;
+}
+
+.fylo-images{
+    display: flex;
+    flex-direction: row;
+}
+span img{
+    
+    border-width: 2px;
+    height: 35px;
+    padding: 5%;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: hsl(229, 57%, 11%);
+    
+}
+
+
+.range-container{
+    background-color: hsl(228, 56%, 26%);
+    position: relative;
+    padding: 2%;
+    width: 30%;
+    gap: 20px;
+    border-radius: 10px;
+    top: 1.2rem;
+}
+
+.progress-bar{
+    background-color: hsl(229, 57%, 11%);
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 1rem 0.1rem 0.1rem;
+}
+
+.progress-bar-color{
+    width: 75%;
+    background-image: linear-gradient(90deg,hsl(6, 100%, 80%), hsl(335, 100%, 65%)
+    );
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.ball{
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 1rem;
+    background-color: hsl(243, 100%, 93%);
+}
+
+.gig-stats{
+    justify-content: space-between;
+    display: flex;
+}
+
+.pale-blue{
+    color: hsl(243, 100%, 93%);
+}
+
+.storage-status{
+    position: absolute;
+    left: 55%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    bottom: 6rem;
+    
+}
+
+.msg{
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0;
+}
+
+.msg strong{
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(229, 57%, 11%);
+}
+
+.text{
+    text-transform: uppercase;
+    color: hsl(229, 7%, 55%);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin-left: 0.5rem;
+}
+
+.triangle{
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 10px white solid;
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+@media (max-width:990px) {
+    body{
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+        background-color: hsl(229, 57%, 11%);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-section{
+        min-width: 65%;
+        padding:5% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .fylo-images{
+        display: flex;
+        flex-direction: row;
+    }
+     
+    span img{
+        margin: 10px; 
+        padding: 5px;
+    }
+    
+  .range-container{
+    min-width: 65%;
+    padding:5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gig-stats{
+      padding-bottom: 10%;
+  }
+
+  .msg{
+      position: relative;
+      top: 8rem;
+      right: 6rem;
+      border-radius: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+.progress-bar{
+   width: 315px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Raleway,' sans-serif;
+}
+    .triangle{
+        display: none;
+        
+    }
+}
